@@ -37,6 +37,10 @@ h1{
     padding: .6rem;
 }
 
+.cabecalho nav{
+    margin-top: 1rem;
+}
+
 .cabecalho a:hover{
     color:  #fed001;
     background-color: black;
@@ -77,6 +81,7 @@ span{
 .hero-principal a{
     background-color:  #fed001;
     font-size: 20px;
+    padding: .6rem;
 }
 
 .hero-principal a:hover{

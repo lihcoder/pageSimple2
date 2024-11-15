@@ -2,177 +2,229 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    padding: 0;
-    margin: 0;
-    background-color: #fed0016b;
+    background-color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
-    background-image: linear-gradient(white,rgb(227, 227, 47));
+    background-image: linear-gradient(rgb(227, 227, 47), white);
 }
-a{
+
+.nav-link{
     text-decoration: none;
     border-radius: 7%;
     color: black;
 }
 
-ul{
-    display: flex;
-    gap: .6rem;
-    list-style-type: none;
-}
 
 h1{
     font-size: 3rem;
-}
-.cabecalho{
-    display: flex;
-    background-color: rgb(46, 41, 41);
+    text-align: center;
+    margin-bottom: 2rem
 }
 
-.cabecalho a{
-    background-color:  #fed001;
-    font-size: 17px;
-    padding: .6rem;
-}
-
-.cabecalho nav{
-    margin-top: 1rem;
-}
-
-.cabecalho a:hover{
-    color:  #fed001;
-    background-color: black;
-    transition: 2s;
-}
-
-.cabecalho li{
-    list-style-type: none;
-    display: inline;
-}
-
-nav{
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 2rem;
-}
-
-
-.hero-header{
-    background-image: url(imagens/HeroImage.png);
-    background-position: right bottom;
+.main-image{
+    background-image: url(/imagens/HeroImage.png);
+    height: 500px;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
+    position: relative;
+    background-position: right bottom;
+    border-radius: 4px;
     background-size: contain;
-    height: 40rem;
-    margin-left: 6rem;
 }
+
+.main-image-info{
+    padding: 25px;
+    position: absolute;
+    left: 25px;
+    border-radius: 4px;
+    width: 26rem;
+    padding-top: 8rem;
+    color: black;
+}
+
+
+
+.main-image-info a, .gx-md-5 a {
+    text-decoration: none;
+    background-color: #fed001;
+    color: black;
+    padding: 7px 18px;
+}
+
+.main-image-info a:hover, .gx-md-5 a:hover{
+    background-color: black;
+    color: #fed001;
+}
+
 
 span{
     text-transform: uppercase;
 }
 
-.hero-principal{
-    width: 22rem;
-    padding-top: 8rem;
+#img1{
+    background-image: url(/imagens/curso-design-1.png);
+    border-radius: 4px;
+    margin-bottom: .1rem;
+    background-repeat: no-repeat;
+    
 }
 
-.hero-principal a{
-    background-color:  #fed001;
-    font-size: 20px;
-    padding: .6rem;
+
+#img2{
+    background-image: url(/imagens/curso-design-2.png);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    margin-bottom: .1rem;
+    width: 100%;
 }
 
-.hero-principal a:hover{
-    color:  #fed001;
-    background-color: black;
-    transition: 2s;
+#img3{
+    background-image: url(/imagens/curso-design.png);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    margin-bottom: .1rem;
 }
 
-.main-principal{
-    display: flex;
-    margin-left: 2.5rem;
-}
 
-.corpo{
-    padding-top: 2rem;
-    background-color: white;
-    text-align: center;
-}
 
-.corpo h1{
-    padding-bottom: 2rem;
+.small-image-container {
+    height: 230px;
+    margin-bottom: 20px;
 }
 
 .more-cursos{
-    margin-top: 2rem;
+    margin-top: 4rem;
+    text-align: center;
 }
 
 .more-cursos a{
     text-align: center;
-    background-color:  #fed001;
+    background-color: #fed001;
+    border-radius: 6px;
     padding: 1rem;
+    text-decoration: none;
     font-size: 20px;
+    color: black;
 }
 
 .more-cursos a:hover{
-    color:  #fed001;
-    background-color: black;
-    transition: 2s;
+    color: black;
+    background-color: #fed001;
+    transition: .2s;
 }
 
 
-.curso h3,p{
-    text-align: left;
-    width: 22rem;
+.card_body p{
+    width: 36rem;
     font-size: 18px;
-    margin-left: 1rem;
 }
 
-.curso{
-    margin-left: 1rem;
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding-bottom: 1rem;
-}
 
-.about-us{
+
+.card{
     margin-top: 5rem;
     background-color: rgb(27, 27, 79);
     color: white;
+    
+}
+.card {
     display: flex;
+    flex-direction: column;
 }
 
-.about-us img{
-    margin-left: 2rem;
+.card_header img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    max-height: 10em;
+
+    object-fit: cover;
+    object-position: center;
 }
 
-.about-school{
-    text-align: left;
-    margin-left: 2rem;
+.card_body {
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: rgb(27, 27, 79);
+    flex-grow: 1;
+    text-align: center;
 }
 
-.about-school p{
-    width: 34rem;
+.card_btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: darkslategrey;
+    padding: .75em 1em;
+    color: white;
+    display: inline-block;
+
 }
 
-.about-school h1{
-    margin-left: 1rem;
+
+
+
+
+/* .card_wrapper,
+main {
+    container-type: inline-size;
+} */
+
+.card_wrapper {
+    /* container-name: cardWrapper; */
+    container: cardWrapper / inline-size;
+}
+
+main {
+    /* container-name: main; */
+    container: main / inline-size;
+}
+
+/* @media screen and (min-width: 50em) { */
+@container cardWrapper (min-width: 680px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card_header img {
+        max-height: initial;
+    }
+}
+
+.cards_container {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+/* @media screen and (min-width: 70em) { */
+@container main (min-width: 70em) {
+    .cards_container {
+        flex-direction: row;
+    }
+
+    .card_wrapper {
+        flex-grow: 1;
+    }
+}
+
+
+
+#contato{
+    text-align: center;
+    color: black;
 }
 
 .location img{
-    border: 2px solid rgb(88, 88, 237);
+   
     width: fit-content;
     margin-left: 1rem;
 }
 
-.more-contatos{
-    padding-left: 70.5rem;
-    padding-bottom: 3rem;
-}
-
-footer{
+#copy-container{
     text-align: center;
     padding: 1rem;
+    color: black;
 }

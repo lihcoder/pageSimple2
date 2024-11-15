@@ -4,104 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Aprenser</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     
     <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"> <img src="imagens/logoAprenser.png" alt="logo do site aprenser"></a>
 
-        <div class="cabecalho">
-            <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                <img src="imagens/logoAprenser.png" alt="logo do site aprenser">
-    
-            </div>
-    
-            <nav>
-                <ul>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#nossa-escola">Nossa Escola</a></li>
-                    <li><a href="#contato">Contatos</a></li>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nossa-escola">Nossa Escola</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contatos</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
-       
-
-        <div class="hero-header">
-
-            <div class="hero-principal">
-
-                <h1>O saber é o que transforma nosso <span>ser</span></h1>
-                <!--pq não coloquei ele todo em maiusculo logo??
-                
-                por que o html entenderia como uma sigla e não como uma palavra-->
-                <a href="#" target="_blank">Saiba mais</a>
-                
+              </div>
             </div>
-         
-        </div>
+          </nav>
+          
+          <div class="container" id="main-image-container">
+            <div class="main-image center-image">
+              <div class="main-image-info">
+                <h2>O saber é o que transforma nosso <span>ser</span></h2>
+                <a href="#btn" class="btn">Saiba mais</a>
+              </div>
+            </div>
+          </div>
+
+     
     </header>
 
-    <main class="corpo" id="cursos">
+    <div class="row gx-md-5 m-2">
+
         <h1>Principais Cursos</h1>
-        <section class="main-principal">
-
-            <article class="curso">
-                <a href="#">
-                    
-                <img src="imagens/curso-design.png" alt="imagem do que se trata o curso">
-                <h3>
-                    Design para web
-                </h3>
-                <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
-                </a>
-
-            </article>
-
-            <article class="curso">
-                <a href="#">
-                    
-                <img src="imagens/curso-design-1.png" alt="imagem do que se trata o curso">
-                <h3>
-                    Front End Developer
-                </h3>
-                <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares.</p>
-                </a>
-
-            </article>
-
-            <article class="curso">
-
-                <a href="#">
-                    <img src="imagens/curso-design-2.png" alt="imagem do que se trata o curso">
-                <h3>
-                    Back End Developer
-                </h3>
-                <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
-                </a>
-
-            </article>
-
-        </section>
-
-        <div class="more-cursos">
-            <a href="#" target="_blank">Ver mais cursos</a>
-        </div>
-
-        <div class="about-us" id="nossa-escola">
-
-            <div>
-                <img src="imagens/nossa-escola.png" alt="modelo da nossa escola">
-            </div>
-
-            <div class="about-school">
-                <h1>Nossa Escola</h1>
-                <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
-            </div>
-        </div>
-
+       
+          <div class="col-10 col-md-4 mb-4">
+            <div class="small-image-container center-image" id="img1"></div>
+            <h3>Front End Developer</h3>
+            <p>Com este curso você aprenderá a tríade do front: HTML, CSS e JS</p>
+            <a href="#" class="btn">Comprar</a>
+          </div>
         
+  
+        <div class="col-10 col-md-4 mb-4">
+          <div class="small-image-container center-image" id="img2"></div>
+          <h3>Back End Developer</h3>
+          <p>Com este curso você aprendará a como desenvolver no PHP</p>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+
+        <div class="col-10 col-md-4 mb-4">
+            <div class="small-image-container center-image" id="img3"></div>
+            <h3>Web Designer</h3>
+            <p>Com este curso você aprenda várias ferramentas, como: o figma</p>
+            <a href="#" class="btn">Comprar</a>
+          </div>
+    </div>
+
+    <div class="more-cursos">
+        <a href="#" target="_blank">Ver mais cursos</a>
+    </div>
+
+    <div class="cards_container">
+        <div class="card_wrapper">
+            <article class="card" id="nossa-escola">
+                <div class="card_header">
+                    <img src="imagens/nossa-escola.png" alt="">
+                </div>
+                <div class="card_body">
+                    <h1>Nossa escola</h1>
+                    <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
+                </div>
+            </article>
+        </div>
 
         <div class="location" id="contato">
             <h1>Contatos</h1>
@@ -114,8 +99,8 @@
         </div>
     </main>
 
-    <footer>
-        Desenvolvido por <a href="https://projetoaprenser.com" target="_blank">Lídia</a>
-    </footer>
+    <div class="container" id="copy-container">
+      <p>Todos os direitos reservados @2024 <span class="primary-color">Projeto Aprenser</span></p>
+    </div>
 </body>
 </html>
